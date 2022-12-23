@@ -38,7 +38,7 @@ const renderMenu = ()=> {
                 input.value=el.dataset['color']
                 copytext()
                 copiedEl.textContent = copyText
-                setTimeout(()=> copiedEl.textContent = ``, 1000, copiedEl)
+                setTimeout(()=> copiedEl.textContent = "", 1000, copiedEl)
             })
             )    
         })
