@@ -142,9 +142,9 @@ h1 .logo-txt {
 .tooltip {
     position: relative;
     
-  }
+}
 
-  .tooltip .tooltiptext {
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 140px;
     background-color: #555;
@@ -159,9 +159,9 @@ h1 .logo-txt {
     margin-left: -75px;
     opacity: 0;
     transition: opacity 0.3s;
-  }
+}
 
-  .tooltip .tooltiptext::after {
+.tooltip .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -170,12 +170,16 @@ h1 .logo-txt {
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
-  }
+}
   
   .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-  }
+}
+  .copyfrom {
+    display: none;
+}
+
 @media (min-width: 1024px) {
      header, .logo-con {
         flex-direction: row;
