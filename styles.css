@@ -177,7 +177,9 @@ h1 .logo-txt {
     opacity: 1;
 }
   .copyfrom {
-    display: none;
+    background-color: #18181B;
+    border: none;
+    outline: none;
 }
 
 @media (min-width: 1024px) {
