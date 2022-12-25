@@ -40,7 +40,7 @@ const renderMenu = ()=> {
                         hex.textContent = `Copied`
                         setTimeout(() => {
                             hex.innerHTML = `Copy <span class="hex-color">${el.dataset["color"]}</span>`
-                    }, 1500)})
+                    }, 1000)})
                 }
             })
         )
