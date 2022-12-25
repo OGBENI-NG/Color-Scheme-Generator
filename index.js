@@ -2,7 +2,6 @@ const selectOptionColor = document.querySelector('#select-color-option')
 const getColorBtn = document.querySelector('#get-color-btn')
 const colorContainer = document.querySelector('#color-container')
 const color = document.querySelector('#color')
-// const input = document.querySelector("input.copyfrom");
 
 const renderMenu = ()=> {
     let colorHtml = ''
@@ -53,7 +52,6 @@ const renderMenu = ()=> {
 getColorBtn.addEventListener('click', () => {
     renderMenu()
 })
-
 // first run
 renderMenu()
 
