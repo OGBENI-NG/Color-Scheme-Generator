@@ -13,7 +13,10 @@ body {
     
 }
 
-header, .logo-con, .logo-con-two, main {
+header, 
+.logo-con, 
+.logo-con-two, 
+main {
     display: flex;
 }
 
@@ -56,25 +59,14 @@ main {
     border-radius: 5px;
 }
 
-.color-one {
-    background-color: #F55A5A;
+.hex-color {
+    display: block;
+    color: #000000;
+    margin-top: .5em;
+    font-weight: 700;
 }
 
-.color-two {
-    background-color: #2B283A;
-}
 
-.color-three {
-    background-color:  #FBF3AB;
-}
-
-.color-four {
-    background-color:  #AAD1B6;
-}
-
-.color-five {
-    background-color:  #A626D3;
-}
 
 button {
     padding: .5em;
@@ -147,8 +139,8 @@ h1 .logo-txt {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 140px;
-    background-color: #555;
-    color: #fff;
+    background-color: #ffffff67;
+    color: #000000;
     text-align: center;
     border-radius: 6px;
     padding: .7em;
@@ -169,14 +161,15 @@ h1 .logo-txt {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    border-color: #ffffff67 transparent transparent transparent;
 }
   
-  .tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
 }
-  .copyfrom {
+
+.copyfrom {
     background-color: #18181B;
     border: none;
     outline: none;
