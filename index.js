@@ -16,16 +16,20 @@ const renderMenu = ()=> {
             const newColor = colorEl.hex.value
 
             colorHtml += `
-                <div class="rectangle-shape"
-                    id="rectangle-shape" style="background:${newColor}">
-                </div>
+            
                 <div class="hex-container tooltip">
                     <span class="tooltiptext hid" data-tooltip="">Copy
                         <span class="hex-color">${newColor}</span>
                     </span>
+                    <div class="rectangle-shape"
+                        id="rectangle-shape" 
+                        data-color="${newColor}"
+
+                        style="background:${newColor}">
+                    </div>
                     <p class="hex" data-color="${newColor}">${newColor}</p>
                 </div>
-
+                
             `
             return newColor
         })
@@ -34,7 +38,7 @@ const renderMenu = ()=> {
         document.querySelectorAll('[data-color]')
 
             .forEach(el=> el.addEventListener('click',() => {
-                if(navigator.clipboard.writeText(el.dataset['color'])) {
+                if(navigator.clipboard.writeText(el.dataset['color'] || el.dataset[''])) {
                     const tooltipHtml = document.querySelectorAll('[data-tooltip]')
                         tooltipHtml.forEach( (hex) => {
                         hex.textContent = `Copied`
