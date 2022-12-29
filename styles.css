@@ -146,7 +146,7 @@ h1 .logo-txt {
     padding: .7em;
     position: absolute;
     z-index: 1;
-    bottom: 50%;
+    bottom: 240%;
     left: 50%;
     margin-left: -75px;
     opacity: 0;

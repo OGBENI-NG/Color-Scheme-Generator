@@ -16,13 +16,13 @@ const renderMenu = ()=> {
             const newColor = colorEl.hex.value
 
             colorHtml += `
+                <div class="rectangle-shape"
+                    id="rectangle-shape" style="background:${newColor}">
+                </div>
                 <div class="hex-container tooltip">
                     <span class="tooltiptext hid" data-tooltip="">Copy
                         <span class="hex-color">${newColor}</span>
                     </span>
-                    <div class="rectangle-shape color-one"
-                        id="rectangle-shape" style="background:${newColor}">
-                    </div>
                     <p class="hex" data-color="${newColor}">${newColor}</p>
                 </div>
 
