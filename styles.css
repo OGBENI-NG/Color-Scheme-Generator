@@ -83,7 +83,7 @@ button:hover {
     color: #A626D3;
 }
 
- button, .hex, select {
+ button, .hex, select, .rectangle-shape {
     cursor: pointer;
 }
 
@@ -202,7 +202,7 @@ h1 .logo-txt {
     main {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(7, minmax(110px, 1fr));
+        grid-template-columns: repeat(5, minmax(110px, 1fr));
         
     }
 
